@@ -5,8 +5,15 @@
 	 - soit avec un line-height
 */
 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
 #container{
 	text-align: center;
+	flex: 1 0 auto;
 }
 
 header #logo {/* 
@@ -16,13 +23,7 @@ header #logo {/*
 header #moteur-recherche {/* 
 	width: 60%; */
 	background-color: grey;
-	color:white;
-}
-
-header #panier {
-	background-color: grey;/* 
-	width: 19%; */
-	background-color: grey;
+	color:black;
 }
 
 #moteur-recherche {
@@ -76,7 +77,7 @@ nav {
 
 #corps article section{
 	/* display:table; */
-	background-color: red;
+	/*background-color: red;*/
 	vertical-align: top;
 }
 #corps article section p{
@@ -110,3 +111,31 @@ nav {
 footer {	
 	margin: 2px;
 }
+
+  /* label color */
+   .input-field label {
+     color: #000;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #000;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #000;
+   }

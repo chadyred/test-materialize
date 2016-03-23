@@ -1,0 +1,24 @@
+front:
+    image: nginx:latest
+    environment:
+        - VIRTUAL_HOST=dev-htmljs.local
+    links:
+        - "engine:engine"
+    volumes:
+        - ".:/home/docker:rw"
+        - "./docker/front/dev-htmljs.conf:/etc/nginx/conf.d/dev-htmljs.conf:ro"
+    expose: 
+        - "3012"
+ 
+engine:
+    build: ./docker/engine/
+    volumes:
+        - ".:/home/docker:rw"
+    working_dir: "/home/docker"
+    # Livereload port for host browser
+    ports:
+        - "35729:35729"
+# No need to share this port cause a network live throught container each other wuthout host port sharing
+##    ports:
+#        - "9002:9002"
+        

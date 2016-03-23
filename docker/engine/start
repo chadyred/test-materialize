@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd /home/docker
+
+npm install
+bower install 
+
+# Task that launch watch and connect task:  the server and the spyer
+gulp

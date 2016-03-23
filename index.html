@@ -3,11 +3,6 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" href="lib/materialize/dist/css/materialize.css">
-	<link rel="stylesheet" href="lib/materialize/dist/font/material-design-icons/Material-Design-Icons.eot">
-	<link rel="stylesheet" href="lib/materialize/dist/font/material-design-icons/Material-Design-Icons.woff">
-	<link rel="stylesheet" href="lib/materialize/dist/font/material-design-icons/Material-Design-Icons.woff2">
-	<link rel="stylesheet" href="lib/materialize/dist/font/material-design-icons/Material-Design-Icons.ttf">
-	<link rel="stylesheet" href="lib/materialize/dist/font/material-design-icons/Material-Design-Icons.svg">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta charset="utf-8">
@@ -15,16 +10,31 @@
 <body>
 	<section class="container">
 		<div class="row">
+
+		<!-- Side menu which ite is just show on click on burger icon -->
 			<section id="menu-aside" class="col m4 s12 hide-on-large-only">
 				<nav class="card-panel hoverable teal orange darken-4">
-					<ul>
-						<li> MENU &nbsp;</li>
-						<li class="hide-on-small-only">Liste item</li>
-						<li class="hide-on-med-and-up">Menu burger</li>
-					</ul>
-					
-				</nav>
+					<div class="nav-wrapper">
+				      <a href="#!" class="brand-logo">Menu</a>
+				      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+					      <ul class="right hide-on-med-and-down">
+					        <li><a href="sass.html">Sass</a></li>
+					        <li><a href="badges.html">Components</a></li>
+					        <li><a href="collapsible.html">Javascript</a></li>
+					        <li><a href="mobile.html">Mobile</a></li>
+					      </ul>
+					      <ul class="side-nav" id="mobile-demo">
+					        <li><a href="sass.html">Sass</a></li>
+					        <li><a href="badges.html">Components</a></li>
+					        <li><a href="collapsible.html">Javascript</a></li>
+					        <li><a href="mobile.html">Mobile</a></li>
+					      </ul>
+					    </div>
+				  </nav>
 			</section>
+
+
+			<!-- Corps -->
 			<section id="main-body" class="col l12 m8">
 				<header class="section row">
 
@@ -38,10 +48,28 @@
 					</section>
 				</header>
 
+
+				<h1>
+					Ce site est folichon ! 
+				</h1>
+
+				
+				
 				<div class="divider"></div>
 				<div class="divider"></div>
-				<nav class="hide-on-med-and-down">
-					Naviguation
+				<nav>
+				  <div class="nav-wrapper">
+				  	<div class="col s12">
+					    <a class="breadcrumb" href="#">First</a>
+					    <a class="breadcrumb" href="#">Second</a>
+					    <a class="breadcrumb" href="#">Third</a>
+
+					    <ul id="nav-mobile" class="right hide-on-med-and-down">
+					      <li><a href="">sass</a></li>
+					      <li><a href="">sass <span class="new badge">4</span></a></li>
+					      <li><a href="">sass</a></li>
+					    </ul>
+					  </div>
 				</nav>
 				<section id="corps" class="section row">
 					<aside class="col s12 l2 section">
@@ -57,10 +85,10 @@
 						<section id="publicite" class="card-panel teal grey darken-4 valign-wrapper center-align">
 							<p class="text-flow white-text text-lighten-5 valign">Publicités</p>
 						</section>
-						<section id="nouveaute" class="card-panel teal yellow darken-3 center-align">
-							<p>Nouveautés</p>
+						<section id="nouveaute" class="card-panel teal yellow darken-3 center-align z-depth-3">
+							<h2>Nouveautés</h2>
 							<p class="divider"></p>
-							<p class="section">
+							<p class="section flow-text">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales nisi id nulla pellentesque, ut finibus risus imperdiet. Duis lacinia sed nulla et rhoncus. Vestibulum et aliquet tellus. Integer blandit est in sodales molestie. In gravida vehicula malesuada. Sed nec faucibus mi. Nam ut metus gravida, aliquet magna dapibus, mollis quam.
 
 								Donec varius dui eget scelerisque tempus. Phasellus elementum at mi eu tempor. Donec eget posuere lorem. Donec molestie, justo non dictum maximus, eros libero placerat lacus, interdum venenatis lectus est id urna. Maecenas dictum elementum turpis. Proin sit amet blandit mi. In hac habitasse platea dictumst. Vivamus ex diam, suscipit ut ipsum id, sollicitudin dictum mi. Fusce faucibus quam eu est malesuada, quis pellentesque neque hendrerit.
@@ -69,6 +97,307 @@
 							</p>
 						</section>
 
+						<!-- dropdown -->
+						<section id="dropdown" class="card-panel teal yellow darken-3 center-align z-depth-3">
+						<h4>
+							Pourquoi? Cliquer pour savoir sur le dropdown !
+						</h4>
+
+							<div class="divider"></div>
+							<!-- DAta -->
+							<ul id="list-dropdown" class="dropdown-content">
+								<li>
+									<a href="#"> Il utilise matérialize <span class="badge new">1</span></a>
+								</li>
+								<li>
+									<a href="#">Il a des couleurs flashy <span class="badge new">2</span></a>
+								</li>
+								<li>
+									<a href="#">MeteorJS become soon <span class="badge new">3</span></a>
+								</li>
+							</ul>
+
+							<!-- dropdown avec data -->
+							<p>
+								<a class="btn dropdown-button" hred="#" data-activates="list-dropdown">
+									Dropbox <i class="mdi-navigation-arrow-drop-down right"></i>
+								</a>
+							</p>
+						</section>
+
+
+						<!-- boutons -->
+						<section id="buttons" class="card-panel teal purple lighten-3 center-align z-depth-3">
+							<h4>
+								Les boutons ce n'est pas du bidon ! 
+							</h4>
+
+							<div class="divider"></div>
+							
+							<div class="row">
+								<!-- Btn simple -->
+								<div class="col s6 l6 m6">
+									<ul>
+										<li>
+											<a class="btn orange lighten-1 btn-flat">Stuff</a>
+											<br/>
+											<br/>
+										</li>
+										<li>
+											<a class="btn"><i class="material-icons left">cloud</i>Clique-me ! </a>
+											<br/>
+											<br/>
+										</li>
+										<li>
+											<a class="btn waves-effect waves-teal"><i class="material-icons left">call end</i> Raccrocher </a>
+											<br/>
+											<br/>
+										</li>
+										<li>
+											<button class="btn waves-effect waves-light" type="submit" name="action">Submit
+		    									<i class="material-icons right">send</i>
+		  									</button>
+											<br/>
+											<br/>
+		  								</li>
+									</ul>
+									<h5> 
+										Des boutons plus large
+									</h5>
+									<ul>
+		  								<li>
+											<a class="btn-large orange lighten-1 btn-flat">Stuff</a>
+											<br/>
+											<br/>
+										</li>
+										<li>
+											<a class="btn-large "><i class="material-icons left">cloud</i>Clique-me ! </a>
+											<br/>
+											<br/>
+										</li>
+										<li>
+											<a class="btn-large waves-effect waves-teal disabled"><i class="material-icons left">call end</i> Raccrocher </a>
+											<br/>
+											<br/>
+										</li>
+										<li>
+											<button class="btn-large waves-effect waves-light grey datken-2" type="submit" name="action">Submit
+		    									<i class="material-icons right">send</i>
+		  									</button>
+		  								</li>		
+									</ul>
+								</div>
+
+								<!-- Bntn rond -->
+								<div class="col s6 l6 m6">
+									<p>
+										<a class="btn-floating btn-small waves-effect wabes-light red lighten-2">
+											<i class="material-icons">add</i>
+										</a>
+										Ajoute moi sur facebook ! 
+									</p>
+									<div class="fixed-action-btn horizontal click-to-toggle">
+										<a class="btn-floating btn-large red darken-2">
+											<i class="material-icons large">mode_edit</i>
+										</a>
+										<ul>
+											<li>
+												<a class="btn-floating orange darken-2">
+													<i class="material-icons">card_giftcard</i>
+												</a>
+											</li>
+											<li>
+												<a class="btn-floating purple darken-2">
+													<i class="material-icons">bug_report</i>
+												</a>
+											</li>
+											<li>
+												<a class="btn-floating yellow darken-2">
+													<i class="material-icons">favorite</i>
+												</a>
+											</li>
+											<li>
+												<a class="btn-floating blue darken-2">
+													<i class="material-icons">face</i>
+												</a>
+											</li>
+										</ul>
+										
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<!-- card -->
+						<section class="card blue-grey lighten-2 center-align">
+							<div class="card-content grey-text text-darken-3">
+								<span class="card-title">													Les CARD-inal
+								</span>
+								<div class="divider"></div>
+								<p>
+									Ce n'est pas pour le fric.
+								</p>
+							</div>
+							<div class="card-action">
+								<a href="#">#Véridique</a>
+								<a href="#">#Fake</a>
+							</div>
+						</section>
+						<div class="row">
+					        <div class="col s6 m6 l6">
+					          <div class="card">
+					            <div class="card-image">
+					              <img src="images/skull.jpg">
+					              <span class="card-title">Mon crâne</span>
+					            </div>
+					            <div class="card-content">
+					              <p>I am a very simple card. I am good at containing small bits of information.
+					              I am convenient because I require little markup to use effectively.</p>
+					            </div>
+					            <div class="card-action">
+					              <a href="#">A card link</a>
+					            </div>
+					          </div>
+
+					        </div>
+
+
+							<div class="col s6 l6 m6">
+								<div class="card large">
+									<div class="card-image waves-effect waves-block waves-light activator">
+										<img class="activator" src="images/skull.jpg"/>
+										<span class="card-title">Je l'aime ce crâne.</span>
+									</div>
+									<div class="card-content activator">
+										. Donec molestie, justo non dictum maximus, eros libero placerat lacus, interdum venenatis lectus est id urna. Maecenas dictum elementum turpis. Proin sit amet blandit mi. In hac habitasse platea dictumst. Vivamus ex diam, suscipit ut ipsum id, sollicitudin dictum mi. Fusce faucibus quam eu es
+									</div>
+									<div class="card-reveal">
+										<div class="card-title red-text text-darken-5">
+											J'étais caché du steak-haché ! <i class="material-icons right">close</i>
+										</div>
+										<div class="card-content">
+											<p>Here is some more information about this product that is only revealed once clicked on.</p>
+	    								</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Chips -->
+						<div class="row">
+							<section class="col s6 l6 m6">
+								<div class="card orange lighten-2">	
+									<div class="card-title">
+										Je veux être une chips
+									</div>
+									<div class="card-content align-center">
+										<i class="mdi-view-module"></i> C'est moi et je pense qu'au fond je ne serais personne d'autres...<i class="mdi-battery-60"></i>
+										<div class="chip red darken-1">
+											<img class="black" src="images/banana.png"/>
+											JE suis une banane !
+										</div>
+										<div class="chip red darken-1">
+											<img class="black" src="images/banana.png"/>
+											JE suis une banane !
+											<i class="material-icons right">close</i>
+										</div>
+									</div>
+									<div class="card-action">
+										<a href="#" class="red-text text-darken-5">Je suis pas petit</a>
+									</div>
+								</div>
+							</section>
+						</div>
+
+						<!-- Collection -->
+						<section class="row">
+							<div class="col s12 l12 m12">
+								<div class="collection">
+									<ul class="collection with-header">
+										<li class="collection-header">
+											<h4>Les phrase des copains</h4>
+										</li>
+										<li class="collection-item avatar">
+											<img src="images/banana.png" class="circle"/>
+											C'est le copain banane
+											<i class="secondary-content material-icons">send</i>
+										</li>
+										<li class="collection-item avatar">
+											<img src="images/skull.jpg" class="circle"/>
+											<span class="title">
+												Skull
+											</span>
+											<p>
+												C'est le skulll hahahaha
+											</p>
+											<a href="#"><i class="secondary-content material-icons">send</i></a>
+										</li>
+										<li class="collection-item avatar">
+
+      										<i class="material-icons circle">folder</i>
+      										<span class="title">The fichier</span>
+      										<p>
+      											 Je suis moche mais bon !
+      										</p>
+											<a href="#"><i class="secondary-content material-icons">send</i></a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<!-- formulaire -->
+						<section id="formulaire" class="card-panel teal white">
+							<!-- On commence par une row -->
+							<div class="card-content row">
+								<!-- Le formulaire prends les 12 colonne -->
+								<form action="#" class="col s12 l12 m12">
+									<!-- On subdivisse en ligne chque élément -->
+									<div class="row">
+										<div class="col s12 l12 m12">
+												<p class="range-field">
+														<input type="range" name="range" id="range" min="0" max="100"/>
+												</p>
+										</div>
+									</div>			
+
+									<!-- Une ligne de deux colonne	 -->					
+									<div class="row">
+										<div class="col s6 l6 input-field">
+										<!-- Le label ne doit pas englobé pour être -->
+												<input type="text" name="first-name" id="first-name" class="validate"/>
+											<label for="last-name">First name</label>
+											
+										</div>
+										<div class="col s6 l6 m6 input-field">
+										<!-- Le label ne doit pas englobé pour être -->
+												<input type="text" name="last-name" id="last-name" class="validate"/>
+											<label for="last-name">Last name</label>
+											
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col s6 m6 l6 input-field">
+										<!-- Positionnement pas annodin ! LE phone avant le label -->
+											<i class="mdi-communication-quick-contacts-mail prefix"></i>
+											<input type="email"  name="email" id="email" class="validate"/>
+											<label for="email" data-error="noooo" data-success="good">Email</label>
+										</div>
+									</div>
+								</form>
+
+							</div>
+						</section>
+						
+						<!-- Icons -->
+						     <!-- Icons -->
+                        <div class="icon">
+                            <i class="material-icons large">face</i>
+                            <i class="material-icons small">report_problem</i>
+                            <i class="material-icons tiny">add_alert</i>
+                        </div>
 					</article>
 					<aside class="col l2 s12 section">
 						<section id="evenement" class="card-panel teal col s12 l12">
@@ -79,6 +408,80 @@
 						</section>
 					</aside>
 				</section>
+
+
+				<!-- Video -->
+				<section class="row">
+					<div class="col l12 m12 s12 center-align">
+						<video class="responsive-video" controls>
+							<source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
+						</video>
+					</div>
+				</section>
+
+				<!-- Team -->
+				<section id="team" class="row card-panel teal yellow lighten-3">
+					<div class="col l3 m4 s6">
+						<img class="responsive-img circle left"src="images/skull.jpg">
+						Suspendisse ultricies accumsan eros, nec rhoncus magna hendrerit pulvinar. Curabitur vel auctor ipsum.
+					</div>
+					<div class="divider"></div>
+					<div class="section col l3 m4 s6">
+						<img class="responsive-img circle left"src="images/skull.jpg">
+						Suspendisse ultricies accumsan eros, nec rhoncus magna hendrerit pulvinar. Curabitur vel auctor ipsum.
+					</div>
+				</section>
+
+				<!-- Table -->
+				<section id="table" class="row">
+					<div class="col s12 l12 m12">
+						<table class="bordered highlight centered responsive-table">
+							<thead>
+								<th>Server name</th>
+								<th>Ip</th>
+								<th>Etat</th>
+							</thead>
+							<tbody class="">
+								<tr class="">
+									<td>front</td>
+									<td>0.0.0.0</td>
+									<td>Live</td>
+								</tr>
+								<tr>
+									<td>sf-portfolio</td>
+									<td>0.0.0.0</td>
+									<td>Stand-alone</td>
+								</tr>
+								<tr>
+									<td>thunder</td>
+									<td>0.0.0.0</td>
+									<td>Dead</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+
+				<!-- Citation -->
+				<section id="quote" class="row card-panel teal orange lighten-5">
+					<div class="col s12 l12 m12">
+						<blockquote>
+							"No woman, no cry" - <i> Bob Marley </i>
+						</blockquote>
+					</div>
+				</section>
+
+				<!-- Badge -->
+				<section id="badge" class="row">
+					<div class="collection">
+						<a href="#" class="collection-item">Florian<span class="badge new">14</span></a>
+						<a href="#" class="collection-item">Sébastien<span class="badge">14</span></a>
+						<a href="#" class="collection-item">Arnaud<span class="badge">14</span></a>
+
+					</div>
+				</section>
+
+				<!-- Promo -->
 				<section id="promo" class="section row">
 					<div class="col s4 m4 l4 center">
 						<i class="material-icons large red-text text-lighten-3">flash_on</i>
@@ -97,36 +500,41 @@
 						<p>Follow us !</p>
 					</div>
 				</section>
-				<section id="team" class="row card-panel teal yellow lighten-3">
-					<div class="col l6 m12 s12">
-						<img class="responsive-img circle left"src="images/skull.jpg">
-						Suspendisse ultricies accumsan eros, nec rhoncus magna hendrerit pulvinar. Curabitur vel auctor ipsum.
-					</div>
-					<div class="divider"></div>
-					<div class="section col l6 m12 s12">
-						<img class="responsive-img circle left"src="images/skull.jpg">
-						Suspendisse ultricies accumsan eros, nec rhoncus magna hendrerit pulvinar. Curabitur vel auctor ipsum.
-					</div>
-				</section>
-				<section class="row">
-					<div class="col l12 m12 s12 center-align">
-						<video class="responsive-video" controls>
-							<source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
-						</video>
-					</div>
-				</section>
-				<section class="section row card-panel teal blue lighten-2">
-					<footer class="col s6 offset-s4 l12">
-							Pied de page - copyright @ me
-					</footer>
-				</section>
+
+					
 
 			</section>
 		</div> <!-- main-row -->
-	</section>
 
+	</section>
+	<footer class="page-footer grey white-text">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2014 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="lib/materialize/dist/js/materialize.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>

@@ -7,9 +7,10 @@ var minifycss = require('gulp-minify-css');
  //Creation d'un serveur
 gulp.task('connect', function() {
   connect.server({
+    host : 'dev-htmljs.local',
     root: './',
     livereload: true,//ajout d'une ligne dans le code avec le port 35XXX en bas
-    port: 3333
+    port: 9002
   });
 });
 
